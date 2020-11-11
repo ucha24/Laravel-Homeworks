@@ -13,8 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/',function(){
-    return redirect(route('cars.index'));
+    return redirect(route('companies.index'));
 });
-Route::resource('cars','CarController');
+Route::resource('companies','CompanyController');
+Route::resource('employees','EmployeeController');
 
 
